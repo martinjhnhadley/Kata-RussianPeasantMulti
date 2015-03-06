@@ -3,7 +3,7 @@ Weekly coding challenge - implementing a multiplication hack.
 
 ## Wolfram Language
 
-KataMulti.wl includes a function `kataBasic` for calculating products via the Kata method, `kataFancy` visualises the technique and `kataExporter` exports a GIF of the technique. The solution is achieved through `NestWhileList`.
+KataMulti.wl includes a function `kataBasic` for calculating products via the Kata method, `kataFancy` visualises the technique and `kataExporter` exports a GIF of the technique. The solution is achieved through `NestWhileList`, checks for positive integers.
 
 Load the package with
 
