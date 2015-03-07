@@ -1,8 +1,9 @@
 kataBasic <- function(int1,int2)
 {
+  signs <- sign(int1)*sign(int2)
   multis <- vector()
-  nextD <- int1
-  nextM <- int2
+  nextD <- abs(int1)
+  nextM <- abs(int2)
   divides <- while(nextD > 1) 
   {
     nextD <- trunc(nextD / 2);
@@ -11,7 +12,7 @@ kataBasic <- function(int1,int2)
       multis <- append(multis,nextM);
     }
   } ##end of while
-  return(sum(multis))
+  return(signs*sum(multis))
 }
 
-kataBasic(140,203)
+kataBasic(-10,-20)
