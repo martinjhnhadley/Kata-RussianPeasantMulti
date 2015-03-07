@@ -10,40 +10,43 @@ Begin["`Private`"]
 
 foo=2;
 
-kataBasic[no1_Integer,no2_Integer]/;no2>0&&no1>0:=Block[{multiPart={},odds={}},
-multiPart=NestWhileList[{IntegerPart[1/2*#[[1]]],2*#[[2]]}&,{no1,no2},#[[1]]>1&];
+kataBasic[no1_Integer,no2_Integer]:=Block[{multiPart={},odds={},sign={}},
+sign=Sign[no1]*Sign[no2];
+multiPart=NestWhileList[{IntegerPart[1/2*#[[1]]],2*#[[2]]}&,Abs@{no1,no2},#[[1]]>1&];
 odds=Cases[multiPart,{a_,_}/;OddQ[a]];
-Total@odds[[All,2]]
+sign*Total@odds[[All,2]]
 ]
 
 kataFormatter[content_]:=Pane[content,{500,200},ImageSizeAction->"ResizeToFit",Alignment->Center];
 
-kataFancy[no1_,no2_]:=Block[{multiPart=1,odds={}},
-multiPart=NestWhileList[{IntegerPart[1/2*#[[1]]],2*#[[2]]}&,{no1,no2},#[[1]]>1&];
+kataFancy[no1_,no2_]:=Block[{multiPart=1,odds={},sign={}},
+sign=Sign[no1]*Sign[no2];
+multiPart=NestWhileList[{IntegerPart[1/2*#[[1]]],2*#[[2]]}&,Abs@{no1,no2},#[[1]]>1&];
 odds=Flatten@Position[multiPart,{a_,_}/;OddQ[a]];
 ListAnimate[
 kataFormatter/@
 {
-Defer@TraditionalForm[no1*no2],Grid[multiPart],
+Row[{no1,"x",no2}],Grid[multiPart],
 Grid[multiPart,ItemStyle->{Automatic,Normal@SparseArray[Thread[odds->Black],{Length[multiPart]},Red]}],
 Grid[multiPart[[odds]]],
 Column[multiPart[[odds,2]]],
-Total[multiPart[[odds,2]]]
+sign*Total[multiPart[[odds,2]]]
 }
 ]
 ]
 
-kataExporter[no1_,no2_,filepath_]:=Block[{multiPart=1,odds={}},
-multiPart=NestWhileList[{IntegerPart[1/2*#[[1]]],2*#[[2]]}&,{no1,no2},#[[1]]>1&];
+kataExporter[no1_,no2_,filepath_]:=Block[{multiPart=1,odds={},sign={}},
+sign=Sign[no1]*Sign[no2];
+multiPart=NestWhileList[{IntegerPart[1/2*#[[1]]],2*#[[2]]}&,Abs@{no1,no2},#[[1]]>1&];
 odds=Flatten@Position[multiPart,{a_,_}/;OddQ[a]];
 Export[filepath,
 kataFormatter/@
 {
-Defer@TraditionalForm[no1*no2],Grid[multiPart],
+Row[{no1,"x",no2}],Grid[multiPart],
 Grid[multiPart,ItemStyle->{Automatic,Normal@SparseArray[Thread[odds->Black],{Length[multiPart]},Red]}],
 Grid[multiPart[[odds]]],
 Column[multiPart[[odds,2]]],
-Total[multiPart[[odds,2]]]
+sign*Total[multiPart[[odds,2]]]
 },
 "DisplayDurations"->1
 ]

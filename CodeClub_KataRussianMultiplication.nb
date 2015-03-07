@@ -1,0 +1,336 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11391,        327]
+NotebookOptionsPosition[     10640,        296]
+NotebookOutlinePosition[     10983,        311]
+CellTagsIndexPosition[     10940,        308]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Code Club: Kata Russian Peasant Multi", "Title",
+ CellChangeTimes->{{3.634639354057353*^9, 3.634639367882403*^9}}],
+
+Cell[TextData[{
+ "Github: ",
+ ButtonBox["https://github.com/NewOrbit/Kata-RussianPeasantMulti",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://github.com/NewOrbit/Kata-RussianPeasantMulti"], None},
+  ButtonNote->"https://github.com/NewOrbit/Kata-RussianPeasantMulti"]
+}], "Text",
+ CellChangeTimes->{{3.6346393715609255`*^9, 3.6346393836685038`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Package", "Section",
+ CellChangeTimes->{{3.6346553763524942`*^9, 3.63465537718087*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Quit", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.6346553794616966`*^9, 3.634655380548651*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Start", "[", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Needs", "[", "\"\<KataMulti`\>\"", "]"}]}], "Input",
+ CellChangeTimes->{{3.634655381861169*^9, 3.634655416661767*^9}}],
+
+Cell[BoxData[
+ RowBox[{"kataFancy", "[", 
+  RowBox[{
+   RowBox[{"-", "10"}], ",", "5"}], "]"}]], "Input",
+ CellChangeTimes->{{3.634744684067706*^9, 3.6347446886621046`*^9}, {
+  3.634744719869958*^9, 3.6347447231962337`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"kataFancy", "[", 
+  RowBox[{
+   RowBox[{"-", "20"}], ",", "10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6346558477550735`*^9, 3.63465585313522*^9}, 
+   3.6347449284923754`*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`i3$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {
+    "\"min\"" :> {$CellContext`i3$$ = 1}, 
+     "\"max\"" :> {$CellContext`i3$$ = 6}}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`i3$$], 1, ""}, 1, 6, 1}}, Typeset`size$$ = Automatic,
+     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`i3$959$$ = 0}, 
+    PaneBox[
+     PanelBox[
+      DynamicWrapperBox[GridBox[{
+         {
+          ItemBox[
+           ItemBox[
+            TagBox[
+             StyleBox[GridBox[{
+                {"\<\"\"\>", 
+                 AnimatorBox[Dynamic[$CellContext`i3$$], {1, 6, 1},
+                  AnimationRate->Automatic,
+                  AnimationRunTime->15.315600395202637`,
+                  AnimationRunning->False,
+                  AnimationTimeIndex->0.3156003952026367,
+                  
+                  AppearanceElements->{
+                   "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons",
+                     "DirectionButton"},
+                  AutoAction->False,
+                  DisplayAllSteps->True]}
+               },
+               AutoDelete->False,
+               
+               GridBoxAlignment->{
+                "Columns" -> {Right, {Left}}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+              "ListAnimateLabel",
+              StripOnInput->False],
+             {"ControlArea", Top}],
+            Alignment->{Automatic, Inherited},
+            StripOnInput->False],
+           Background->None,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            StyleBox[
+             PaneBox[
+              TagBox[
+               PaneSelectorBox[{1->
+                PaneBox[
+                 TemplateBox[{RowBox[{"-", "20"}],"\"x\"","10"},
+                  "RowDefault"],
+                 Alignment->Center,
+                 ImageSize->{500, 200},
+                 ImageSizeAction->"ResizeToFit"], 2->
+                PaneBox[
+                 TagBox[GridBox[{
+                    {"20", "10"},
+                    {"10", "20"},
+                    {"5", "40"},
+                    {"2", "80"},
+                    {"1", "160"}
+                   },
+                   AutoDelete->False,
+                   
+                   GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                  "Grid"],
+                 Alignment->Center,
+                 ImageSize->{500, 200},
+                 ImageSizeAction->"ResizeToFit",
+                 ScrollPosition->{0., 0.}], 3->
+                PaneBox[
+                 TagBox[GridBox[{
+                    {"20", "10"},
+                    {"10", "20"},
+                    {"5", "40"},
+                    {"2", "80"},
+                    {"1", "160"}
+                   },
+                   AutoDelete->False,
+                   
+                   GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                   GridBoxItemStyle->{"Columns" -> {{Automatic}}, "Rows" -> {
+                    RGBColor[1, 0, 0], 
+                    RGBColor[1, 0, 0], 
+                    GrayLevel[0], 
+                    RGBColor[1, 0, 0], 
+                    GrayLevel[0]}}],
+                  "Grid"],
+                 Alignment->Center,
+                 ImageSize->{500, 200},
+                 ImageSizeAction->"ResizeToFit",
+                 ScrollPosition->{0., 0.}], 4->
+                PaneBox[
+                 TagBox[GridBox[{
+                    {"5", "40"},
+                    {"1", "160"}
+                   },
+                   AutoDelete->False,
+                   
+                   GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                  "Grid"],
+                 Alignment->Center,
+                 ImageSize->{500, 200},
+                 ImageSizeAction->"ResizeToFit",
+                 ScrollPosition->{0., 0.}], 5->
+                PaneBox[
+                 TagBox[GridBox[{
+                    {"40"},
+                    {"160"}
+                   },
+                   DefaultBaseStyle->"Column",
+                   GridBoxAlignment->{"Columns" -> {{Left}}},
+                   
+                   GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                  "Column"],
+                 Alignment->Center,
+                 ImageSize->{500, 200},
+                 ImageSizeAction->"ResizeToFit",
+                 ScrollPosition->{0., 0.}], 6->
+                PaneBox[
+                 RowBox[{"-", "200"}],
+                 Alignment->Center,
+                 ImageSize->{500, 200},
+                 ImageSizeAction->"ResizeToFit"]}, Dynamic[$CellContext`i3$$],
+                Alignment->Automatic,
+                ImageSize->All,
+                TransitionDirection->Horizontal,
+                TransitionDuration->0.5,
+                TransitionEffect->Automatic],
+               Identity,
+               Editable->True,
+               Selectable->True],
+              ImageMargins->10],
+             Deployed->False,
+             StripOnInput->False,
+             ScriptLevel->0,
+             GraphicsBoxOptions->{PreserveImageOptions->True},
+             Graphics3DBoxOptions->{PreserveImageOptions->True}],
+            Identity,
+            Editable->False,
+            Selectable->False],
+           Alignment->{Left, Center},
+           Background->GrayLevel[1],
+           Frame->1,
+           FrameStyle->GrayLevel[0, 0.2],
+           ItemSize->Automatic,
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{
+         "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Top}}, 
+          "RowsIndexed" -> {}},
+        GridBoxDividers->{
+         "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+          "RowsIndexed" -> {}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.7], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.7]}, "ColumnsIndexed" -> {}, "Rows" -> {
+            Offset[0.4], {
+             Offset[0.8]}, 
+            Offset[0.4]}, "RowsIndexed" -> {}}], If[
+        CurrentValue["SelectionOver"], 
+        Manipulate`Dump`ReadControllerState[
+         Map[Manipulate`Dump`updateOneVar[#, 
+           CurrentValue["PreviousFormatTime"], 
+           CurrentValue["CurrentFormatTime"]]& , {
+           
+           Manipulate`Dump`controllerLink[{$CellContext`i3$$, \
+$CellContext`i3$959$$}, "X1", 
+            If["DefaultAbsolute", True, "JB1"], False, {1, 6, 1}, 6, 1.]}], 
+         CurrentValue[{
+          "ControllerData", {
+           "Gamepad", "Joystick", "Multi-Axis Controller"}}], {}]],
+       ImageSizeCache->{533., {125.75, 132.75}}],
+      DefaultBaseStyle->{},
+      FrameMargins->{{5, 5}, {5, 5}}],
+     BaselinePosition->Automatic,
+     ImageMargins->0],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "ListAnimate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.634655854025857*^9, 3.634744929023628*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"kataExporter", "[", 
+  RowBox[{
+   RowBox[{"-", "20"}], ",", "24", ",", "\"\<test2.gif\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.6346583360680404`*^9, 3.634658350030757*^9}, 
+   3.63474462643027*^9, {3.634744764139908*^9, 3.6347447650930424`*^9}}],
+
+Cell[BoxData["\<\"test2.gif\"\>"], "Output",
+ CellChangeTimes->{
+  3.6346583510619593`*^9, {3.6346584375261636`*^9, 3.634658449474275*^9}, {
+   3.6347446099582605`*^9, 3.634744627320854*^9}, 3.6347447661714263`*^9, 
+   3.634744855487507*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"SystemOpen", "[", "%", "]"}]], "Input",
+ CellChangeTimes->{{3.6346583539686785`*^9, 3.6346583577051573`*^9}, {
+  3.634744680098037*^9, 3.63474468184845*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{752, 767},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 120, 1, 144, "Title"],
+Cell[703, 25, 361, 8, 30, "Text"],
+Cell[CellGroupData[{
+Cell[1089, 37, 93, 1, 63, "Section"],
+Cell[1185, 40, 120, 2, 31, "Input"],
+Cell[1308, 44, 342, 8, 72, "Input"],
+Cell[1653, 54, 224, 5, 31, "Input"],
+Cell[CellGroupData[{
+Cell[1902, 63, 201, 5, 31, "Input"],
+Cell[2106, 70, 7753, 200, 294, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9896, 275, 276, 5, 31, "Input"],
+Cell[10175, 282, 241, 4, 31, "Output"]
+}, Open  ]],
+Cell[10431, 289, 181, 3, 31, "Input"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
