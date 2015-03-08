@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11391,        327]
-NotebookOptionsPosition[     10640,        296]
-NotebookOutlinePosition[     10983,        311]
-CellTagsIndexPosition[     10940,        308]
+NotebookDataLength[     13573,        398]
+NotebookOptionsPosition[     11938,        338]
+NotebookOutlinePosition[     12730,        367]
+CellTagsIndexPosition[     12563,        360]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -52,6 +52,47 @@ Cell[BoxData[{
  RowBox[{"Needs", "[", "\"\<KataMulti`\>\"", "]"}]}], "Input",
  CellChangeTimes->{{3.634655381861169*^9, 3.634655416661767*^9}}],
 
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "kataBasic"}]], "Input",
+ CellChangeTimes->{{3.634819813580653*^9, 3.6348198155500865`*^9}}],
+
+Cell[BoxData[
+ StyleBox["\<\"kataBasic[int1,int2] calculates the product of int1 and int2\"\
+\>", "MSG"]], "Print", "PrintUsage",
+ CellChangeTimes->{3.6348198162373934`*^9},
+ CellTags->"Info3634819816-2118332"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "kataFancy"}]], "Input",
+ CellChangeTimes->{{3.6348198253945417`*^9, 3.6348198267634716`*^9}}],
+
+Cell[BoxData[
+ StyleBox["\<\"kataFancy[int2,int2] provides a graphical visualisation of the \
+Kata Russian Peasant Multiplication Method\"\>", "MSG"]], "Print", \
+"PrintUsage",
+ CellChangeTimes->{3.6348198272400055`*^9},
+ CellTags->"Info3634819827-2118332"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "kataExporter"}]], "Input",
+ CellChangeTimes->{{3.634819829054906*^9, 3.634819830409778*^9}}],
+
+Cell[BoxData[
+ StyleBox["\<\"kataExporter[int1,int2,filepath] exports an animated GIF of \
+the Kata multiplication method for int1 and int2 to filepath\"\>", 
+  "MSG"]], "Print", "PrintUsage",
+ CellChangeTimes->{3.634819831341931*^9},
+ CellTags->"Info3634819831-2118332"]
+}, Open  ]],
+
 Cell[BoxData[
  RowBox[{"kataFancy", "[", 
   RowBox[{
@@ -63,23 +104,22 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"kataFancy", "[", 
-  RowBox[{
-   RowBox[{"-", "20"}], ",", "10"}], "]"}]], "Input",
+  RowBox[{"21", ",", "10"}], "]"}]], "Input",
  CellChangeTimes->{{3.6346558477550735`*^9, 3.63465585313522*^9}, 
-   3.6347449284923754`*^9}],
+   3.6347449284923754`*^9, {3.6348197502827463`*^9, 3.6348197684656134`*^9}}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`i3$$ = 1, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`i6$$ = 6, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {
-    "\"min\"" :> {$CellContext`i3$$ = 1}, 
-     "\"max\"" :> {$CellContext`i3$$ = 6}}, Typeset`bookmarkMode$$ = "Menu", 
+    "\"min\"" :> {$CellContext`i6$$ = 1}, 
+     "\"max\"" :> {$CellContext`i6$$ = 6}}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`i3$$], 1, ""}, 1, 6, 1}}, Typeset`size$$ = Automatic,
+       Hold[$CellContext`i6$$], 1, ""}, 1, 6, 1}}, Typeset`size$$ = Automatic,
      Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`i3$959$$ = 0}, 
+    True, $CellContext`i6$1057$$ = 0}, 
     PaneBox[
      PanelBox[
       DynamicWrapperBox[GridBox[{
@@ -89,11 +129,10 @@ Cell[BoxData[
             TagBox[
              StyleBox[GridBox[{
                 {"\<\"\"\>", 
-                 AnimatorBox[Dynamic[$CellContext`i3$$], {1, 6, 1},
+                 AnimatorBox[Dynamic[$CellContext`i6$$], {1, 6, 1},
                   AnimationRate->Automatic,
-                  AnimationRunTime->15.315600395202637`,
-                  AnimationRunning->False,
-                  AnimationTimeIndex->0.3156003952026367,
+                  AnimationRunTime->64.32908153533936,
+                  AnimationTimeIndex->4.3290815353393555`,
                   
                   AppearanceElements->{
                    "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons",
@@ -124,14 +163,14 @@ Cell[BoxData[
               TagBox[
                PaneSelectorBox[{1->
                 PaneBox[
-                 TemplateBox[{RowBox[{"-", "20"}],"\"x\"","10"},
+                 TemplateBox[{"21","\"x\"","10"},
                   "RowDefault"],
                  Alignment->Center,
                  ImageSize->{500, 200},
                  ImageSizeAction->"ResizeToFit"], 2->
                 PaneBox[
                  TagBox[GridBox[{
-                    {"20", "10"},
+                    {"21", "10"},
                     {"10", "20"},
                     {"5", "40"},
                     {"2", "80"},
@@ -148,7 +187,7 @@ Cell[BoxData[
                  ScrollPosition->{0., 0.}], 3->
                 PaneBox[
                  TagBox[GridBox[{
-                    {"20", "10"},
+                    {"21", "10"},
                     {"10", "20"},
                     {"5", "40"},
                     {"2", "80"},
@@ -159,7 +198,7 @@ Cell[BoxData[
                    GridBoxItemSize->{
                     "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
                    GridBoxItemStyle->{"Columns" -> {{Automatic}}, "Rows" -> {
-                    RGBColor[1, 0, 0], 
+                    GrayLevel[0], 
                     RGBColor[1, 0, 0], 
                     GrayLevel[0], 
                     RGBColor[1, 0, 0], 
@@ -171,6 +210,7 @@ Cell[BoxData[
                  ScrollPosition->{0., 0.}], 4->
                 PaneBox[
                  TagBox[GridBox[{
+                    {"21", "10"},
                     {"5", "40"},
                     {"1", "160"}
                    },
@@ -185,6 +225,7 @@ Cell[BoxData[
                  ScrollPosition->{0., 0.}], 5->
                 PaneBox[
                  TagBox[GridBox[{
+                    {"10"},
                     {"40"},
                     {"160"}
                    },
@@ -198,11 +239,10 @@ Cell[BoxData[
                  ImageSize->{500, 200},
                  ImageSizeAction->"ResizeToFit",
                  ScrollPosition->{0., 0.}], 6->
-                PaneBox[
-                 RowBox[{"-", "200"}],
+                PaneBox["210",
                  Alignment->Center,
                  ImageSize->{500, 200},
-                 ImageSizeAction->"ResizeToFit"]}, Dynamic[$CellContext`i3$$],
+                 ImageSizeAction->"ResizeToFit"]}, Dynamic[$CellContext`i6$$],
                 Alignment->Automatic,
                 ImageSize->All,
                 TransitionDirection->Horizontal,
@@ -248,8 +288,8 @@ Cell[BoxData[
            CurrentValue["PreviousFormatTime"], 
            CurrentValue["CurrentFormatTime"]]& , {
            
-           Manipulate`Dump`controllerLink[{$CellContext`i3$$, \
-$CellContext`i3$959$$}, "X1", 
+           Manipulate`Dump`controllerLink[{$CellContext`i6$$, \
+$CellContext`i6$1057$$}, "X1", 
             If["DefaultAbsolute", True, "JB1"], False, {1, 6, 1}, 6, 1.]}], 
          CurrentValue[{
           "ControllerData", {
@@ -268,7 +308,9 @@ $CellContext`i3$959$$}, "X1",
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.634655854025857*^9, 3.634744929023628*^9}]
+ CellChangeTimes->{
+  3.634655854025857*^9, 3.634744929023628*^9, 3.6348196995515904`*^9, {
+   3.634819751931011*^9, 3.6348197691579037`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -303,10 +345,24 @@ StyleDefinitions->"Default.nb"
 
 (* Internal cache information *)
 (*CellTagsOutline
-CellTagsIndex->{}
+CellTagsIndex->{
+ "Info3634819816-2118332"->{
+  Cell[1798, 60, 210, 4, 40, "Print",
+   CellTags->"Info3634819816-2118332"]},
+ "Info3634819827-2118332"->{
+  Cell[2170, 73, 257, 5, 40, "Print",
+   CellTags->"Info3634819827-2118332"]},
+ "Info3634819831-2118332"->{
+  Cell[2588, 87, 271, 5, 40, "Print",
+   CellTags->"Info3634819831-2118332"]}
+ }
 *)
 (*CellTagsIndex
-CellTagsIndex->{}
+CellTagsIndex->{
+ {"Info3634819816-2118332", 12245, 348},
+ {"Info3634819827-2118332", 12353, 351},
+ {"Info3634819831-2118332", 12461, 354}
+ }
 *)
 (*NotebookFileOutline
 Notebook[{
@@ -317,16 +373,31 @@ Cell[CellGroupData[{
 Cell[1089, 37, 93, 1, 63, "Section"],
 Cell[1185, 40, 120, 2, 31, "Input"],
 Cell[1308, 44, 342, 8, 72, "Input"],
-Cell[1653, 54, 224, 5, 31, "Input"],
 Cell[CellGroupData[{
-Cell[1902, 63, 201, 5, 31, "Input"],
-Cell[2106, 70, 7753, 200, 294, "Output"]
+Cell[1675, 56, 120, 2, 31, "Input"],
+Cell[1798, 60, 210, 4, 40, "Print",
+ CellTags->"Info3634819816-2118332"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9896, 275, 276, 5, 31, "Input"],
-Cell[10175, 282, 241, 4, 31, "Output"]
+Cell[2045, 69, 122, 2, 31, "Input"],
+Cell[2170, 73, 257, 5, 40, "Print",
+ CellTags->"Info3634819827-2118332"]
 }, Open  ]],
-Cell[10431, 289, 181, 3, 31, "Input"]
+Cell[CellGroupData[{
+Cell[2464, 83, 121, 2, 31, "Input"],
+Cell[2588, 87, 271, 5, 40, "Print",
+ CellTags->"Info3634819831-2118332"]
+}, Open  ]],
+Cell[2874, 95, 224, 5, 31, "Input"],
+Cell[CellGroupData[{
+Cell[3123, 104, 232, 4, 31, "Input"],
+Cell[3358, 110, 7799, 202, 294, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11194, 317, 276, 5, 31, "Input"],
+Cell[11473, 324, 241, 4, 31, "Output"]
+}, Open  ]],
+Cell[11729, 331, 181, 3, 31, "Input"]
 }, Open  ]]
 }, Open  ]]
 }
